@@ -18,7 +18,7 @@ function stripPrefix(url) {
 }
 
 function proxyHeaders(headers) {
-  const next = { ...headers, host: upstream.host };
+  const next = { ...headers };
   delete next["connection"];
   delete next["content-length"];
   return next;
