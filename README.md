@@ -1,6 +1,6 @@
-# Vaultwarden Basic Auth Proxy
+# Vaultwarden Prefix Proxy
 
-Caddy reverse proxy for Railway that only exposes Vaultwarden under a secret path prefix.
+Tiny dependency-free Node reverse proxy for Railway that only exposes Vaultwarden under a secret path prefix.
 
 Required variables:
 

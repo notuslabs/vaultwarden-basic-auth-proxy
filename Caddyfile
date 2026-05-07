@@ -1,8 +1,0 @@
-:{$PORT} {
-	handle /{$PROXY_PREFIX}* {
-		uri strip_prefix /{$PROXY_PREFIX}
-		reverse_proxy {$UPSTREAM}
-	}
-
-	respond 404
-}
