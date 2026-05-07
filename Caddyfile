@@ -1,7 +1,8 @@
-:{$PORT}
+:{$PORT} {
+	handle /{$PROXY_PREFIX}* {
+		uri strip_prefix /{$PROXY_PREFIX}
+		reverse_proxy {$UPSTREAM}
+	}
 
-basicauth /admin* {
-	{$BASIC_AUTH_USER} {$BASIC_AUTH_HASH}
+	respond 404
 }
-
-reverse_proxy {$UPSTREAM}

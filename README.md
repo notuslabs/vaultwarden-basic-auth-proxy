@@ -1,11 +1,10 @@
 # Vaultwarden Basic Auth Proxy
 
-Caddy reverse proxy for Railway with HTTP Basic Auth configured through environment variables.
+Caddy reverse proxy for Railway that only exposes Vaultwarden under a secret path prefix.
 
 Required variables:
 
-- `BASIC_AUTH_USER`
-- `BASIC_AUTH_HASH`
+- `PROXY_PREFIX`
 - `UPSTREAM`
 
-Do not commit plaintext credentials or generated password hashes to this repository.
+Do not commit the generated prefix or credentials to this repository.
