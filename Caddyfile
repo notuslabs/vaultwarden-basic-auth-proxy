@@ -1,0 +1,7 @@
+:{$PORT}
+
+basicauth {
+	{$BASIC_AUTH_USER} {$BASIC_AUTH_HASH}
+}
+
+reverse_proxy {$UPSTREAM}
